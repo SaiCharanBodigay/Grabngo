@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks - Grab N Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>Grab N Go</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="grabngo.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="cart.html">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="menu" id="menuSection">
+        <h1>Snacks</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/FrenchFries.jpg" alt="">
+                <h2>French Fries <br> 60/-</h2>
+                <p>French Fries (150g) – (468 kcal, 5.1g protein, 61.5g carbs, 22.5g fat).</p>
+                <button onclick="addToCart('French Fries', 60)" class="btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Momos.jpg" alt="">
+                <h2>Momos</h2>
+                <p>Momos (100g) – (175 kcal, 6g protein, 30g carbs, 2g fat).</p>
+                <button onclick="addToCart('Momos', 60)" class="btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/ChickenNuggets.jpg" alt="">
+                <h2>Chicken Nuggets</h2>
+                <p>Chicken Nuggets (100g) – (296 kcal, 15g protein, 18g carbs, 20g fat).</p>
+                <button onclick="addToCart('Chicken Nuggets', 60)" class="btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Samosa.jpg" alt="">
+                <h2>Samosa</h2>
+                <p>Samosa (1 piece) – (132 kcal, 3g protein, 18g carbs, 6g fat).</p>
+                <button onclick="addToCart('Samosa', 60)" class="btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Frankie.jpg" alt="">
+                <h2>Frankie</h2>
+                <p>Frankie (1 piece) – (320 kcal, 12g protein, 40g carbs, 10g fat).</p>
+                <button onclick="addToCart('Frankie', 60)" class="btn">Add To Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Chickenpuff.jpg" alt="">
+                <h2>Chicken Puff</h2>
+                <p>Chicken Puff (1 piece) – (250 kcal, 8g protein, 20g carbs, 15g fat).</p>
+                <button onclick="addToCart('Chicken Puff', 60)" class="btn">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+nav .logo h4 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    background-color: #ff7f50;
+    border-radius: 5px;
+}
+
+/* Home Section Styles */
+.home {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background-size: cover; /* Ensure the image covers the full section */
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    min-height: 100vh; /* Ensure the section covers the full viewport height */
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.home .btn {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+    background-color: #ff5722;
+}
+
+/* Menu Section Styles */
+.menu {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.menu-item .btn {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item .btn:hover {
+    background-color: #ff5722;
+}
+
+/* About Section Styles */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about ul li::before {
+    content: "•";
+    color: #ff7f50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Cart Section Styles */
+.cart {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cart-item p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-total {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Logo Container Styles */
+.logo-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff7f50; /* You can change the color as needed */
+}
+
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff5722;
+}
+
+/* Background image for login page */
+body.login-page {
+    background: url('images/login-bg.jpg') no-repeat center center/cover;
+    background-size: cover; /* Ensure the image covers the full section */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Splash Screen Styles */
+.splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.splash-logo {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .logo-container, .login-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .logo-text {
+        font-size: 2.5rem;
+    }
+
+    .login-container h2 {
+        font-size: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
